@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ewpsa/static/css/main.e6c13ad2.css",
+    "main.js": "/ewpsa/static/js/main.02c5ce2b.js",
+    "static/js/453.a65049f6.chunk.js": "/ewpsa/static/js/453.a65049f6.chunk.js",
+    "index.html": "/ewpsa/index.html",
+    "main.e6c13ad2.css.map": "/ewpsa/static/css/main.e6c13ad2.css.map",
+    "main.02c5ce2b.js.map": "/ewpsa/static/js/main.02c5ce2b.js.map",
+    "453.a65049f6.chunk.js.map": "/ewpsa/static/js/453.a65049f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.02c5ce2b.js"
+  ]
+}
