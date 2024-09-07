@@ -22,6 +22,8 @@ import ListIcon from '@mui/icons-material/List';
 import DesktopOnlyMenuIcon from './Components/DesktopOnlyMenuIcon';
 import DesktopOnlyBanner from './Components/DesktopOnlyBanner';
 import LeagueScores2Gun from './LeagueScores2Gun';
+
+import Home from './Home';
 import Matches from './Matches';
 
 import UspsaExplainer from './MatchTypes/USPSA';
@@ -127,14 +129,7 @@ const App = () => {
     switch(selectedPage) {
       case 'Home':
         return (
-          <Box>
-            <Typography variant="h4" component="h1" gutterBottom>
-              Welcome to the Shooting Club
-            </Typography>
-            <Typography variant="body1">
-              This is the home page content.
-            </Typography>
-          </Box>
+          <Home />
         );
       case 'Our Match Schedule':
         return (
