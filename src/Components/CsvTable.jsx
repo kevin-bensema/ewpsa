@@ -22,7 +22,8 @@ const CSVTable = ({ csvUrl }) => {
   useEffect(() => {
     const fetchCSV = async () => {
       try {
-        const response = await fetch(csvUrl);
+        const fullPath = `${import.meta.env.BASE_URL}${csvUrl}`;
+        const response = await fetch(fullPath);
         const reader = response.body.getReader();
         const result = await reader.read();
         const decoder = new TextDecoder('utf-8');
