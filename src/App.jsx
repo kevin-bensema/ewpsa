@@ -92,8 +92,9 @@ const App = () => {
   const renderMenuItem = (item, index) => (
     <React.Fragment key={index}>
       <ListItem 
-        button 
+        button  // Add this line
         onClick={item.subItems ? toggleMatches : () => handlePageSelect(item.text)}
+        sx={{ cursor: 'pointer' }}  // Add this line for extra assurance
       >
         <ListItemIcon>{item.icon}</ListItemIcon>
         <ListItemText primary={item.text} />
@@ -104,9 +105,9 @@ const App = () => {
           <List component="div" disablePadding>
             {item.subItems.map((subItem, subIndex) => (
               <ListItem 
-                button 
+                button  // Add this line
                 key={subIndex} 
-                sx={{ pl: 4 }}
+                sx={{ pl: 4, cursor: 'pointer' }}  // Modify this line
                 onClick={() => handlePageSelect(typeof subItem === 'string' ? subItem : subItem.text)}
               >
                 {typeof subItem === 'string' ? (

@@ -11,7 +11,7 @@ const Matches = () => {
                 You can always find all of our matches on <a href="https://practiscore.com/clubs/ewpsa-2">Practiscore</a>. Below are 
                 direct links to registration for some upcoming matches in 2024.
                 </Typography>
-                <MatchList jsonUrl="/ewpsa/matches.json"/>
+                <MatchList jsonUrl="./ewpsa/matches.json"/>
             </Box>
         </Container>
     );

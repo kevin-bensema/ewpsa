@@ -7,7 +7,7 @@ const LeagueScores2Gun = () => {
         <Container>
             <Box sx={{ my: 4 }}>
                 <Typography variant="h4">Standings for 2024 Monthly 2-Gun League</Typography>
-                <CSVTable csvUrl="/ewpsa/Standings_2Gun.csv"/>
+                <CSVTable csvUrl="./ewpsa/Standings_2Gun.csv"/>
             </Box>
         </Container>
     );
