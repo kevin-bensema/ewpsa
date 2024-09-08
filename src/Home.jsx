@@ -10,7 +10,7 @@ const Home = () => {
                 </Typography>
 
                 <Typography variant="body1" component="p" sx={{marginBottom: 2}}>
-                Vite version. 
+                Vite version. Should have fixes.
                 </Typography>
             </Box>
         </Container>
