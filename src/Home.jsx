@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <Container maxWidth = "md">
             <Box sx={{ my: 4 }}>
-                <Typography variant="body1" paragraph>
+                <Typography variant="body1" component="p" sx={{marginBottom: 2}}>
                 Is a USPSA affiliated club that hosts Monthly USPSA pistol matches, Steel Challenge, and multigun events at the Rattlesnake Mountain Shooting Facility. 
                 </Typography>
             </Box>

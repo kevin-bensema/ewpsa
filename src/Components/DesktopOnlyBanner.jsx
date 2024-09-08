@@ -2,7 +2,7 @@ import React from 'react';
 import { Box } from '@mui/material';
 import useIsMobile from './CommonFunctions';
 
-const DesktopOnlyBanner = ({ imageSrc, altText}) => {
+const DesktopOnlyBanner = ({ imageSrc, altText }) => {
   const isMobile = useIsMobile();
 
   if (isMobile) {
@@ -16,8 +16,9 @@ const DesktopOnlyBanner = ({ imageSrc, altText}) => {
       alt={altText}
       sx={{
         width: '100%',
-        height: '100%',
+        maxHeight: '400px', // Set maximum height to 400px
         objectFit: 'cover',
+        objectPosition: 'center', // Ensure the image is centered if it needs to be cropped
       }}
     />
   );
