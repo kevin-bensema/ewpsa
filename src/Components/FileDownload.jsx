@@ -5,7 +5,7 @@ import { Download as DownloadIcon } from '@mui/icons-material';
 const FileDownload = ({ fileName, displayName }) => {
   const handleDownload = () => {
     // Construct the full URL for the file
-    const fileUrl = process.env.PUBLIC_URL + '/' + fileName;
+    const fileURL = `${import.meta.env.BASE_URL}${fileName}`;
     
     // Create a temporary anchor element
     const link = document.createElement('a');

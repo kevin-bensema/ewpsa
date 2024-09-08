@@ -18,7 +18,8 @@ const MatchList = ({ jsonUrl }) => {
   useEffect(() => {
     const fetchMatches = async () => {
       try {
-        const response = await fetch(jsonUrl);
+        const fullURL = `${import.meta.env.BASE_URL}${jsonUrl}`;
+        const response = await fetch(fullURL);
         const data = await response.json();
         setMatches(data);
 
